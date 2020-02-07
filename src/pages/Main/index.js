@@ -1,12 +1,21 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
-// import { Container } from './styles';
+import { Container, Input, Form, SubmitButton } from './styles';
 
-export default function Main() {
+export default function Main({ navigation }) {
   return (
-    <View>
-      <Text>Main</Text>
-    </View>
+    <Container>
+      <Form>
+        <Input
+          autoCorrect={false}
+          autoCapitalize="none"
+          placeholder="Adicionar usuário"
+        />
+        <SubmitButton>
+          <Icon name="add" size={20} color="#FFF" />
+        </SubmitButton>
+      </Form>
+    </Container>
   );
 }
