@@ -4,6 +4,7 @@ import { StatusBar } from 'react-native';
 
 import Main from './pages/Main';
 import User from './pages/User';
+import Web from './pages/Web';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ function Routes() {
         }}>
         <Stack.Screen name="Home" component={Main} />
         <Stack.Screen name="User" component={User} />
+        <Stack.Screen name="Web" component={Web} />
       </Stack.Navigator>
     </>
   );

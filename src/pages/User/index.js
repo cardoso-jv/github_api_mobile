@@ -43,6 +43,12 @@ export default class User extends Component {
     this.setState({ stars: response.data, loading: false });
   }
 
+  handleNavigate = repository => {
+    const { navigation } = this.props;
+
+    navigation.navigate('Web', { repository });
+  };
+
   async loadMore(user) {
     const { stars, page } = this.state;
 
@@ -89,7 +95,7 @@ export default class User extends Component {
             onEndReachedThreshold={0.2}
             onEndReached={() => this.loadMore(user)}
             renderItem={({ item }) => (
-              <Starred>
+              <Starred onPress={() => this.handleNavigate(item)}>
                 <OwnerAvatar source={{ uri: item.owner.avatar_url }} />
                 <Info>
                   <Title>{item.name}</Title>
