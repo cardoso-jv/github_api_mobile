@@ -16,5 +16,4 @@ or
 
 #### View - Native App
 
-![](view.gif)
-
+ <img src="view.gif" width="540" /> 
