@@ -16,4 +16,5 @@ or
 
 #### View - Native App
 
-![](screenshots/1.png)
+![](view.gif)
+
