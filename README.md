@@ -16,4 +16,4 @@ or
 
 #### View - Native App
 
-<img src="view.gif" data-canonical-src="screenshots/1.png" width="250" />
+![](screenshots/1.png)
